@@ -1,5 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="page">
+	
 	<view class="head">
 		<view class="layout fix-wrap">
 			<view class="left-btn">
@@ -148,5 +149,11 @@
 			<navigator url="/" open-type="navigate" hover-class="none">点击查看全部商品</navigator> 
 		</view>
 	</view>
-	<v-nav />
+ 
+	<v-nav isIphoneX='{{isIphoneX}}'></v-nav> 
+	<view wx:if="{{isIphoneX}}" class="iphonex-bar">
+		<view class="layout fix-wrap">{{isIphoneX}}<!-- 兼容iphonex布局 不能删除 --></view>
+	</view>
+	
+	
 </view>

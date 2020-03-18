@@ -1,11 +1,15 @@
 // pages/index/index.js
+
+const app = getApp();
+const utils = require('../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-	banner:{
+	isIphoneX:false,   // 判断是否iphonex
+	banner:{	
 		current:0,
 		data:[  // 轮播图数据
 			{
@@ -44,15 +48,23 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (options) { 
+ 
+	/*
+	 *兼容处理iphonex底部黑条
+	 * 
+	 * **/ 
+	this.setData({
+		isIphoneX:utils.isIphoneX()  
+	})
+	console.log('isIphoneX',this.isIphoneX,utils.isIphoneX()) 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+	
   },
 
   /**

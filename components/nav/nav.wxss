@@ -12,6 +12,9 @@
 	display: flex;
 	background: #fff;
 }
+.nav .isIphonex{
+	bottom:68rpx;
+}
 .nav .item{
 	flex-grow: 1;
 	text-align: center;

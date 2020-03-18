@@ -2,15 +2,8 @@
   "pages": [
     "pages/index/index",    
     "pages/login/login",         
-    "pages/register/register",
-    "pages/address/address",
-    "pages/order/order",
-    "pages/list/list",
-    "pages/confirm/confirm",
-    "pages/coupon/coupon",
-    "pages/mycoupon/mycoupon",
-    "pages/common/common"
-
+    "pages/register/register",   
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

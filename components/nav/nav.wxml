@@ -1,6 +1,6 @@
 <!--components/nav/nav.wxml-->
 <view class="nav">
-	<view class="layout fix-wrap">
+	<view class="layout fix-wrap {{isIphoneX?'isIphonex':''}}">
 		<view class="item">
 			<view class="iconfont icon-juanhun f-s32"></view>
 			<view class="menu-name">首页</view>

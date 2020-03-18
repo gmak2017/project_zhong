@@ -1,10 +1,13 @@
 // components/nav/nav.js
+const utils = require('../../utils/util.js')
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+	isIphoneX:{
+		type:Boolean
+	}
   },
 
   /**
