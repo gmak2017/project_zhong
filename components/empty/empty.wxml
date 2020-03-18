@@ -1,0 +1,8 @@
+<view class="empty-page">			
+	<view class="wrap">
+		<image src="../../static/images/empty_03.jpg" mode="widthFix"></image>		
+		<view class="msg">
+			<slot name="msg"></slot> 
+		</view>
+	</view>
+</view>

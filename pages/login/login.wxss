@@ -1,0 +1,67 @@
+/* pages/login/login.wxss */
+.page,.contain{
+	background: #FFFFFF;
+	overflow: auto;
+}
+.logo{
+	width:386rpx;
+	margin:72rpx auto 50rpx;
+}
+.logo image{
+	width:100%;
+}
+.login-tab-wrap{
+	display: flex;
+	margin-bottom:95rpx;
+}
+.login-tab-wrap .item{
+	flex-grow: 1;
+	height: 58rpx;
+	text-align: center;
+	color:#6d6d6d;
+	font-size:30rpx;
+}
+.login-tab-wrap .active .text{
+	display: inline-block;
+	height: 56rpx;
+	color:#000;
+	border-bottom:2rpx solid #000; 
+}
+
+.form-wrap{
+	margin:0 5%;
+}
+.state-label{ 
+	margin-bottom:44rpx;
+	font-size:40rpx;
+}
+.lay-btn{
+	margin-bottom:44rpx;
+}
+.forget-pw{
+	text-align: center;
+	color:#6d6d6d;
+	font-size:28rpx;
+}
+.form-item{
+	display: flex;
+	align-items: center;
+	padding: 40rpx 0;
+	border-bottom:2rpx solid #ddd;
+}
+.form-item .label{
+	font-size:28rpx;
+}
+.form-item .inp{
+	flex-grow: 2;
+	padding:0 20rpx;
+}
+.form-item .icon{
+	width:40rpx;
+}
+.form-item .icon image{
+	width: 100%;
+}
+
+
+

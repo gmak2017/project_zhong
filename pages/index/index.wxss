@@ -1,0 +1,158 @@
+/* pages/index/index.wxss */
+.head{
+	height:70rpx;
+}
+.head .fix-wrap{
+	height:70rpx;
+	background: #fff;
+}
+.head .left-btn{
+	position: absolute;
+	left:30rpx;
+	height:70rpx;	
+	width:100rpx;
+	display: flex;
+}
+.head .left-btn .iconfont{
+	flex-grow: 1;
+	text-align: center;
+	line-height: 70rpx;
+	color:#c1c1c1;
+}
+.head .title{
+	width:50%;
+	line-height: 70rpx;
+	text-align: center;
+	margin: 0 auto;
+	letter-spacing: 10rpx;
+	font-size:28rpx;
+}
+.swiper-banner{ 
+	position: relative;
+	height:1010rpx;
+	margin-bottom: 120rpx;
+}
+.swiper-banner swiper{
+	height:1010rpx;
+}
+.swiper-banner image{
+	width: 100%;
+}
+.more-btn{
+	text-align: center;
+	margin-bottom:86rpx;
+}
+.more-btn navigator{
+	display: inline-block;
+	border-bottom:2rpx solid #000;
+	font-size:26rpx;
+}
+
+/* 自定义轮播指示点样式 */
+
+.indication{ 
+	width:100%;
+  height: 36rpx;
+  position: absolute;
+  bottom: 70rpx;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+
+/* 未选中指示点样式 */
+
+.spot{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin-right: 26rpx;
+  background-color: #fff;
+}
+
+/*选中指示样式 */
+.spot.active{ 
+  background-color: #aaa;
+}
+.hot-goods{
+	padding:0 3%;
+	position: relative; 
+	margin-bottom: 97rpx;
+}
+.hot-goods image{
+	width:100%;
+}
+.hot-goods .mod-title{
+	position:absolute;
+	bottom:150rpx;
+	width:94%;
+	text-align: center;
+	color: #ffffff;
+}
+.hot-goods .mod-title .en{
+	font-size: 44rpx;
+}
+
+.goods-cate-wrap{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding:0 3%;
+	margin-bottom:140rpx;
+}
+.goods-cate-wrap .item{
+	width:25%;
+	margin-bottom:30rpx;
+	text-align: center;
+}
+.goods-cate-wrap .item .pic{
+	width:80%; 
+	margin:0 auto 10rpx;
+}
+.goods-cate-wrap .item .pic image{
+	width:100%;
+}
+.goods-cate-wrap .item .title{
+	font-size: 26rpx;
+}
+
+.hot-swiper{
+	position:relative;
+	width:94%;
+	margin:0 auto 140rpx;
+	height:524rpx;  
+}
+.hot-swiper .btn{
+	position: absolute;
+	top:222rpx;
+	z-index:100;
+	width:52rpx;
+	height:80rpx;
+	background: #fff;
+}
+.hot-swiper .prev{
+	left:0;
+}
+.hot-swiper .next{
+	right:0;
+}
+.scroll-wrap { 
+  height: 524rpx;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;  
+}
+.scroll-view-item {
+  width: 68%;
+  height: 524rpx;  
+  margin-right:20rpx;
+  display: inline-block;
+}
+.scroll-view-item image{
+	width:100%;
+}
+
+ 
+
+

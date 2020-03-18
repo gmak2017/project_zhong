@@ -1,0 +1,41 @@
+<view class="page">
+	<view class="contain">
+		<view class="cate-tab-type-2 r-5">
+			<view class="item active">
+				<view class="menu">
+					<view class="text">锁定中</view>
+					<view class="line"></view>
+				</view>  					
+			</view>
+			<view class="item">
+				<view class="menu">
+					<view class="text">已使用</view>
+					<view class="line"></view>
+				</view> 
+			</view>
+			<view class="item">
+				<view class="menu">
+					<view class="text">已过期</view>
+					<view class="line"></view>
+				</view>  
+			</view>
+			<view class="item">
+				<view class="menu">
+					<view class="text">已禁用</view>
+					<view class="line"></view>
+				</view>  
+			</view>
+			<view class="item">
+				<view class="menu">
+					<view class="text">已转赠</view>
+					<view class="line"></view>
+				</view>  
+			</view>
+		</view>
+		
+		<!-- 空数据 -->
+		<v-empty>
+			<text slot="msg">暂无锁定中的优惠券</text>
+		</v-empty>
+	</view>
+</view> 

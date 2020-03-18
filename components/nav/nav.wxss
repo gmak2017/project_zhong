@@ -1,0 +1,39 @@
+/* components/nav/nav.wxss */
+@import "/static/css/base.wxss";
+@import "/static/css/iconfont.wxss";
+
+
+.nav{
+	height:100rpx;
+}
+.nav .fix-wrap{
+	bottom:0;
+	height:100rpx; 
+	display: flex;
+	background: #fff;
+}
+.nav .item{
+	flex-grow: 1;
+	text-align: center;
+	color:#909090;
+}
+.nav .item .iconfont{
+	width:32rpx;
+	height:32rpx;
+	margin:15rpx auto 8rpx;
+	text-align: center;  
+}
+.nav .item .menu-name{
+	text-align: center;
+	font-size:32rpx;
+	font-size:22rpx;
+}
+
+
+
+
+
+
+
+
+

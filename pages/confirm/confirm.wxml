@@ -1,0 +1,111 @@
+<view class="page">
+	<view class="contain">
+		<!-- 选择地址 -->
+		<view class="addres-area"> 
+			<view class="address-info">
+				<!-- 有地址 -->
+				<block wx:if="1">
+					<view class="name">white</view>
+					<view class="address">广东省 广州市 天河区 祥圃街1号明普花园(广州市天河区祥圃街5号附近)</view>
+				</block>
+				<!-- 没有地址 -->
+				<text wx:else class="address">暂无配送信息\n请手动添加或使用微信地址</text>
+			</view>
+			<view class="iconfont icon-youjiantou"></view>
+		</view>
+		
+		<!-- 物流 -->
+		<view class="logistics-area">
+			<view class="logistics-info">
+				<view class="title">标准邮寄上门</view>
+				<view class="day">星期一 16</view>
+				<view class="price">￥0</view>
+			</view>
+			<view class="iconfont icon-youjiantou"></view>
+		</view>
+		
+		<!-- 优惠券选择 -->
+		<view class="coupon-wrap">
+			<view class="title" bindtap="showCoupon">
+				<text>优惠券</text> 
+				<text class="iconfont icon-xiajiantou f-s20 ani {{isCoupon?'active':''}}"></text>
+			</view>
+			<view wx:if="{{isCoupon}}" class="coupon-inp-bar">
+				<input type="text" value="" class="inp" placeholder="请输入优惠券" />
+				<view class="btn">提交</view>
+			</view>
+		</view>
+		
+		<!-- 订单商品 -->
+		<view class="goods-wrap">
+			<view class="goods">
+				<view class="pic"><image src="../../static/upload/260x260_1.jpg" mode="widthFix"></image></view>
+				<view class="info">
+					<view class="title split-line">英伦海军风刺绣</view>
+					<view class="spec">产品编号：909090909</view>
+					<view class="price-bar">
+						<view class="price">￥14.100</view>
+						<view class="num">数量：X1</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		
+		<!-- 选择按钮 -->
+		<view class="lay-btn-wrap">
+			<view class="lay-btn-item" >
+				<view class="content">
+					<view class="label-name">
+						<view class="iconfont icon-weixin f-s36"></view>
+					</view>
+					<view class="val">
+						<view class="con-text">微信支付</view> 
+					</view>	
+					<view class="right-icon">
+						<view class="iconfont icon-radio_box_fill f-s36"></view>
+					</view>
+				</view> 
+			</view>
+			<view class="lay-btn-item" >
+				<view class="content">
+					<view class="label-name">
+						<view class="iconfont icon-weixin f-s36"></view>
+					</view>
+					<view class="val">
+						<view class="con-text">发票</view>
+						<view class="link-text">不开发票</view>
+					</view>	
+					<view class="right-icon">
+						<view class="iconfont icon-youjiantou"></view>
+					</view>
+				</view> 
+			</view>
+		</view>
+		
+		<!-- 总金额 -->
+		<view class="total-price">
+			总计 ￥14.100
+		</view>
+		
+		<!-- 同意协议 -->
+		<view class="agreement-bar" bindtap="agreeEvent">
+		  <view class="checkbox">
+		    <image wx:if="{{!isAgreement}}" src="../../static/images/checkbox_11.jpg" mode="widthFix"></image>
+		    <image wx:else src="../../static/images/checkbox_active_03.jpg" mode="widthFix"></image>
+		  </view>
+		  <view class="con-text">本人已阅读、理解并同意
+		    <text class="">接受我们的</text>
+		    <navigator url="/" hover-class="none" open-type="navigate">隐私政策</navigator>
+		    <text>和</text>
+		    <navigator url="/" hover-class="none" open-type="navigate">销售条款</navigator>
+		  </view>
+		</view>
+		
+	
+	</view>
+	<view class="foot">
+		<view class="layout fix-wrap">
+			<view class="lay-btn">确认支付</view>
+		</view>
+	</view>
+</view>

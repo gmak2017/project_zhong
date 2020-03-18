@@ -1,0 +1,16 @@
+<view class="page">
+	<view class="contain">
+		<view class="coupon-cate-area">
+			<view class="coupon-cate-btn">
+				<view class="title">全部类型 0</view>
+				<view class="iconfont icon-xiajiantou"></view>
+			</view>
+			<view class="icon-label"></view>
+		</view> 
+		
+		<!-- 空数据 -->
+		<v-empty>
+			<text slot="msg">暂无锁定中的优惠券</text>
+		</v-empty>
+	</view>
+</view> 

@@ -1,0 +1,26 @@
+/* pages/confirm/confirm.wxss */
+.addres-area,
+.logistics-area,
+.coupon-wrap{
+	width: 88%;
+	margin:0 auto 30rpx;
+}
+.goods-wrap{
+	width:94%;
+	margin: 0 auto;
+	border-top:1rpx solid #f4f4f4;
+	border-bottom:1rpx solid #f4f4f4;
+}
+.lay-btn-wrap{
+	padding-right:3%;
+}
+.total-price{
+	padding:30rpx;
+	text-align: right;
+	font-size:32rpx;
+}
+.agreement-bar{
+	width:94%;
+	margin: 40rpx auto;
+}
+ 

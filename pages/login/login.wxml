@@ -1,0 +1,45 @@
+<view class="page">
+  <view class="contain">
+    <view class="logo">
+      <image src="../../static/images/logo_03.jpg" mode="widthFix"></image>
+    </view>
+    <view class="login-tab-wrap">
+      <view class="item active">
+        <navigator url="/pages/login/login" open-type="navigate" hover-class="none" class="text">登录</navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/register/register" open-type="navigate" hover-class="none" class="text">注册</navigator>
+      </view>
+    </view>
+    <!-- 登录表单 -->
+    <view class="form-wrap">
+      <view class="state-label">我已注册</view>
+      <view class="form-item">
+        <view class="label">邮箱</view>
+        <input type="text" class="inp" value="" placeholder="" />
+      </view>
+      <view class="form-item">
+        <view class="label">密码</view>
+        <input type="text" password="{{isShowPassword}}" class="inp" value="" placeholder="" />
+        <view class="icon" bindtap="showPassword">
+          <image src="../../static/images/see_icon_07.jpg" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="agreement-bar" bindtap="agreeEvent">
+        <view class="checkbox">
+          <image wx:if="{{!isAgreement}}" src="../../static/images/checkbox_11.jpg" mode="widthFix"></image>
+          <image wx:else src="../../static/images/checkbox_active_03.jpg" mode="widthFix"></image>
+        </view>
+        <view class="con-text">本人已阅读、理解并同意
+          <text class="">接受我们的</text>
+          <navigator url="/" hover-class="none" open-type="navigate">隐私政策</navigator>
+          <text>和</text>
+          <navigator url="/" hover-class="none" open-type="navigate">销售条款</navigator>
+        </view>
+      </view>
+      <view class="lay-btn">登录</view>
+      <view class="forget-pw">忘记密码？</view>
+    </view>
+    <!-- 登录表单 end -->
+  </view>
+</view>

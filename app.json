@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",    
+    "pages/login/login",         
+    "pages/register/register",
+    "pages/address/address",
+    "pages/order/order",
+    "pages/list/list",
+    "pages/confirm/confirm",
+    "pages/coupon/coupon",
+    "pages/mycoupon/mycoupon",
+    "pages/common/common"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ONLINE SHOP",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

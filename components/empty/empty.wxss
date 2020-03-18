@@ -1,0 +1,19 @@
+/* components/empty/empty.wxss */
+.empty-page{
+	display: flex;
+	justify-content: center;
+	padding:100rpx 0;
+	background: #eee;
+}
+.empty-page .wrap{
+	width:70%;
+	text-align: center;
+}
+.empty-page image{
+	margin-bottom:30rpx;
+	width:80%;
+}
+.empty-page .msg{
+	color:#999;
+	font-size:30rpx;
+}

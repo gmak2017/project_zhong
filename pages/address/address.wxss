@@ -1,0 +1,5 @@
+/* pages/address/address.wxss */
+.add-btn{
+	width:90%;
+	margin:0 auto;
+}

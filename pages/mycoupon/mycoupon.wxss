@@ -1,0 +1,45 @@
+/* pages/mycoupon/mycoupon.wxss */
+.page,.contain{
+	background: #eee;
+}
+
+.coupon-cate-area{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding:30rpx 30rpx;
+}
+.coupon-cate-btn{
+	display: flex;
+	align-items: center;
+	margin-top:30rpx;
+}
+.coupon-cate-btn .title{
+	margin-right:15rpx;
+	font-size:34rpx;
+	font-weight: bold;
+	color:#333;
+}
+.coupon-cate-btn .iconfont{
+	font-size:30rpx;
+	color:#333
+}
+.coupon-cate-area .icon-label{
+	width:300rpx;
+	height:200rpx;
+	margin-right: 40rpx;
+	background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<view class="page">
+	<view class="contain">
+		<!-- 地址列表 -->
+		<view class="address-wrap">
+			<view class="address-item">
+				<view class="name">white</view>
+				<view class="address">广东省 天河区 车陂高地大街 5号 510650广东省 天河区 车陂高地大街 5号 510650广东省  </view>
+			</view>
+			<view class="address-item">
+				<view class="name">white</view>
+				<view class="address">广东省 天河区 车陂高地大街 5号 510650广东省 天河区 车陂高地大街 5号 510650广东省  </view>
+			</view>
+		</view>
+		<view class="add-btn">+ 添加新地址</view>
+	</view>
+</view>

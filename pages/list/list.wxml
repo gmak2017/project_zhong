@@ -1,0 +1,28 @@
+<view class="page">
+	<view class="contain">
+		<!-- 目录列表 -->
+		<view class="cate-wrap">
+			<view class="cate-list-item">
+				<view class="cate-am">
+					<view class="cate-name">
+						<text class="en">WHAT'S NEW</text>/
+						<text class="cn">新品上市</text>
+					</view>
+					<view class="iconfont">+</view>
+				</view>
+				<view class="cate-bm"></view>
+			</view>
+			<view class="cate-list-item">
+				<view class="cate-am">
+					<view class="cate-name">
+						<text class="en">WHAT'S NEW</text>/
+						<text class="cn">新品上市</text>
+					</view>
+					<view class="iconfont">+</view>
+				</view>
+				<view class="cate-bm"></view>
+			</view>
+		</view>
+	</view>
+	<v-nav></v-nav>
+</view>

@@ -1,0 +1,4 @@
+/* pages/coupon/coupon.wxss */
+.page,.contain{
+	background: #eee;
+}

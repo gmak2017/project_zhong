@@ -1,0 +1,129 @@
+/* pages/login/login.wxss */
+.page,.contain{
+	background: #FFFFFF;
+	overflow: auto;
+}
+.logo{
+	width:386rpx;
+	margin:72rpx auto 50rpx;
+}
+.logo image{
+	width:100%;
+}
+.login-tab-wrap{
+	display: flex;
+	margin-bottom:48rpx;
+}
+.login-tab-wrap .item{
+	flex-grow: 1;
+	height: 58rpx;
+	text-align: center;
+	color:#6d6d6d;
+	font-size:30rpx;
+}
+.login-tab-wrap .active .text{
+	display: inline-block;
+	height: 56rpx;
+	color:#000;
+	border-bottom:2rpx solid #000; 
+}
+
+.form-wrap{
+	margin:0 5%;
+}
+ 
+.lay-btn{
+	margin-bottom:44rpx;
+}
+.forget-pw{
+	text-align: center;
+	color:#6d6d6d;
+	font-size:28rpx;
+}
+.form-item{
+	display: flex;
+	align-items: center;
+	padding: 40rpx 0;
+	border-bottom:2rpx solid #ddd;
+}
+.form-item .label{ 
+	font-size:28rpx;
+}
+.form-item .inp{
+	flex-grow: 2;
+	padding:0 20rpx;
+}
+.form-item .area{
+	display: flex;
+	flex-grow: 2; 
+}
+.form-item .area .item{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	margin-left:40rpx;
+}
+.form-item .area .item .text{
+	font-size:28rpx;
+	color:#666;
+}
+.form-item .area .item .icon_label{
+	display: inline-block;
+	width:16rpx;
+	transform: rotate(-45deg);
+}
+.form-item .icon{
+	width:40rpx;
+}
+.form-item .icon image{
+	width: 100%;
+}
+.agreement-bar{
+	display: flex;
+	line-height: 30rpx;
+	height:30rpx;
+	margin:50rpx 0 60rpx 0;
+}
+.agreement-bar .checkbox{
+	width:30rpx;
+	margin-right:5px;
+}
+.agreement-bar .checkbox image{
+	width: 100%;
+}
+.agreement-bar .con-text{
+	display: flex;
+	flex-wrap: wrap; 
+	font-size:24rpx;
+	color:#676767;
+}
+.agreement-bar text{
+	color:#919191;
+}
+.agreement-bar navigator{	
+	margin:0 3rpx; 
+	color:#000;
+	border-bottom:2rpx solid #000;
+}
+.get-address-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height:46rpx;
+	line-height: 46rpx;
+	margin:80rpx 0 80rpx;
+}
+.get-address-btn .iconfont{
+	margin-right:20rpx;
+	color:#50a347;
+	font-size:46rpx;
+}
+.get-address-btn .text{
+	height:28rpx;
+	line-height: 28rpx;
+	border-bottom:3rpx solid #000;
+	font-size:28rpx;
+	font-weight: bold;
+}

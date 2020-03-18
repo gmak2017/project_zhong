@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "v-nav":"/components/nav/nav"
+  },
+  "navigationBarBackgroundColor": "#fefefe",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "MITHRIDATE",
+  "backgroundColor": "#ebebeb",
+  "backgroundTextStyle": "light"
+}

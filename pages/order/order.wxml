@@ -1,0 +1,55 @@
+<view class="page">
+	<view class="contain">
+		<!-- 分类菜单 -->
+		<view class="cate-tab r-5">
+			<view class="item active">
+				<view class="menu">全部</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">待支付</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">待收货</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">已完成</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">已取消</view>
+				<view class="line"></view>
+			</view>
+		</view>
+		<!-- 订单列表 -->
+		<view class="order-wrap">
+			<view class="order-item">
+				<view class="top">
+					<view class="label-status">待支付</view>
+					<view class="time">下单时间：2020年03年02日 23:00</view>
+				</view>
+				<view class="goods">
+					<view class="pic"><image src="../../static/upload/260x260_1.jpg" mode="widthFix"></image></view>
+					<view class="info">
+						<view class="title split-line">英伦海军风刺绣</view>
+						<view class="spec">产品编号：909090909</view>
+						<view class="price-bar">
+							<view class="price">￥14.100</view>
+							<view class="num">数量：X1</view>
+						</view>
+					</view>
+				</view>
+				<view class="bottom">
+					<view class="total-price">共1件，总计</view>
+					<view class="btn-area">
+						<view class="btn ">取消订单</view>
+						<view class="btn confirm">确认订单</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+

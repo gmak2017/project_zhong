@@ -1,0 +1,212 @@
+<!--pages/common/common.wxml-->
+<!-- 
+<view class="page">
+	<view class="contain"></view>
+</view> 
+-->
+<view class="page">
+	<view class="contain">
+		<view class=" " style="background: #eee;">
+			<view class="cate-tab-type-2 r-5">
+				<view class="item active">
+					<view class="menu">
+						<view class="text">锁定中</view>
+						<view class="line"></view>
+					</view>  					
+				</view>
+				<view class="item">
+					<view class="menu">
+						<view class="text">已使用</view>
+						<view class="line"></view>
+					</view> 
+				</view>
+				<view class="item">
+					<view class="menu">
+						<view class="text">已过期</view>
+						<view class="line"></view>
+					</view>  
+				</view>
+				<view class="item">
+					<view class="menu">
+						<view class="text">已禁用</view>
+						<view class="line"></view>
+					</view>  
+				</view>
+				<view class="item">
+					<view class="menu">
+						<view class="text">已转赠</view>
+						<view class="line"></view>
+					</view>  
+				</view>
+			</view>
+		</view>
+		<!-- 空页面 -->
+		<view class="empty-page">			
+			<view class="wrap">
+				<image src="../../static/images/empty_03.jpg" mode="widthFix"></image>
+				<view class="msg">暂无锁定中的优惠券</view>
+			</view>
+		</view>
+		<!-- 目录列表 -->
+		<view class="cate-wrap">
+			<view class="cate-list-item">
+				<view class="cate-am">
+					<view class="cate-name">
+						<text class="en">WHAT'S NEW</text>/
+						<text class="cn">新品上市</text>
+					</view>
+					<view class="iconfont">+</view>
+				</view>
+				<view class="cate-bm"></view>
+			</view>
+		</view>
+		<!-- 物流 -->
+		<view class="logistics-area">
+			<view class="logistics-info">
+				<view class="title">标准邮寄上门</view>
+				<view class="day">星期一 16</view>
+				<view class="price">￥0</view>
+			</view>
+			<view class="iconfont icon-youjiantou"></view>
+		</view>
+		
+		<!-- 选择地址 -->
+		<view class="addres-area"> 
+			<view class="address-info">
+				<!-- 有地址 -->
+				<block wx:if="1">
+					<view class="name">white</view>
+					<view class="address">广东省 广州市 天河区 祥圃街1号明普花园(广州市天河区祥圃街5号附近)</view>
+				</block>
+				<!-- 没有地址 -->
+				<text wx:else class="address">暂无配送信息\n请手动添加或使用微信地址</text>
+			</view>
+			<view class="iconfont icon-youjiantou"></view>
+		</view>
+		
+		<!-- 分类菜单 -->
+		<view class="cate-tab r-5">
+			<view class="item active">
+				<view class="menu">全部</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">待支付</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">待收货</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">已完成</view>
+				<view class="line"></view>
+			</view>
+			<view class="item">
+				<view class="menu">已取消</view>
+				<view class="line"></view>
+			</view>
+		</view>
+		
+		
+		
+		<!-- 地址块 -->
+		<view class="address-wrap">
+			<view class="address-item">
+				<view class="name">white</view>
+				<view class="address">广东省 天河区 车陂高地大街 5号 510650广东省 天河区 车陂高地大街 5号 510650广东省  </view>
+			</view>
+			<view class="address-item">
+				<view class="name">white</view>
+				<view class="address">广东省 天河区 车陂高地大街 5号 510650广东省 天河区 车陂高地大街 5号 510650广东省  </view>
+			</view>
+		</view>
+		
+		<view class="add-btn">+ 添加新地址</view>
+		
+		<!-- 订单 -->
+		<view class="order-wrap">
+			<view class="order-item">
+				<view class="top">
+					<view class="label-status">待支付</view>
+					<view class="time">下单时间：2020年03年02日 23:00</view>
+				</view>
+				<view class="goods">
+					<view class="pic"><image src="../../static/upload/260x260_1.jpg" mode="widthFix"></image></view>
+					<view class="info">
+						<view class="title split-line">英伦海军风刺绣</view>
+						<view class="spec">产品编号：909090909</view>
+						<view class="price-bar">
+							<view class="price">￥14.100</view>
+							<view class="num">数量：X1</view>
+						</view>
+					</view>
+				</view>
+				<view class="bottom">
+					<view class="total-price">共1件，总计</view>
+					<view class="btn-area">
+						<view class="btn ">取消订单</view>
+						<view class="btn confirm">确认订单</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		
+		<!-- 同意协议 -->
+		<view class="agreement-bar" bindtap="agreeEvent">
+		  <view class="checkbox">
+		    <image wx:if="{{!isAgreement}}" src="../../static/images/checkbox_11.jpg" mode="widthFix"></image>
+		    <image wx:else src="../../static/images/checkbox_active_03.jpg" mode="widthFix"></image>
+		  </view>
+		  <view class="con-text">本人已阅读、理解并同意
+		    <text class="">接受我们的</text>
+		    <navigator url="/" hover-class="none" open-type="navigate">隐私政策</navigator>
+		    <text>和</text>
+		    <navigator url="/" hover-class="none" open-type="navigate">销售条款</navigator>
+		  </view>
+		</view>
+		
+		<!-- 优惠券选择 -->
+		<view class="coupon-wrap">
+			<view class="title">
+				<text>优惠券</text> 
+				<text class="iconfont icon-xiajiantou f-s20 active"></text>
+			</view>
+			<view class="coupon-inp-bar">
+				<input type="text" value="" class="inp" placeholder="请输入优惠券" />
+				<view class="btn">提交</view>
+			</view>
+		</view>
+		
+		<!-- 选择按钮 -->
+		<view class="lay-btn-wrap">
+			<view class="lay-btn-item" >
+				<view class="content">
+					<view class="label-name">
+						<view class="iconfont icon-weixin f-s36"></view>
+					</view>
+					<view class="val">
+						<view class="con-text">微信支付</view> 
+					</view>	
+					<view class="right-icon">
+						<view class="iconfont icon-radio_box_fill f-s36"></view>
+					</view>
+				</view> 
+			</view>
+			<view class="lay-btn-item" >
+				<view class="content">
+					<view class="label-name">
+						<view class="iconfont icon-weixin f-s36"></view>
+					</view>
+					<view class="val">
+						<view class="con-text">发票</view>
+						<view class="link-text">不开发票</view>
+					</view>	
+					<view class="right-icon">
+						<view class="iconfont icon-youjiantou"></view>
+					</view>
+				</view> 
+			</view>
+		</view>
+	</view>
+</view>

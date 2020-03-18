@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+	  "v-empty":"/components/empty/empty"
+  },
+  "navigationBarBackgroundColor": "#fefefe",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "历史优惠券",
+  "backgroundColor": "#ebebeb",
+  "backgroundTextStyle": "light"
+}

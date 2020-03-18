@@ -1,0 +1,152 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+	<view class="head">
+		<view class="layout fix-wrap">
+			<view class="left-btn">
+				<view class="iconfont icon-r"></view>
+				<view class="iconfont icon-search f-s44"></view>
+			</view>
+			<view class="title split">MITHRIDATE</view>
+		</view>
+	</view> 
+	<view class="contain">
+		<view class="swiper-banner">
+			<swiper current="{{current}}" bindchange="swiperChange" display-multiple-items='1'
+				indicator-dots='{{banner.swiper.indicatorDots}}'
+				vertical='{{banner.swiper.vertical}}' 
+				autoplay= '{{banner.swiper.autoplay}}'
+				circular='{{banner.swiper.circular}}'
+				interval= '{{banner.swiper.interval}}'
+				duration='{{banner.swiper.duration}}'
+			>     
+				<swiper-item wx:for="{{banner.data}}" wx:key="index">									 
+				  <image src='{{item.img}}' mode="widthFix"></image>
+				</swiper-item> 
+			</swiper>
+			<view class="indication">			
+			    <block wx:for="{{banner.data}}" wx:key="imgList">			
+			        <view class="spot{{index == current? ' active' : ''}}"></view>			
+			    </block>			
+			</view>
+		</view>
+		<!-- 新品 -->
+		<view class="mod-title">
+			<view class="en">WHAT'S NEW</view>
+			<view class="cn">新品上市</view>
+		</view>
+		<view class="hot-swiper"> 
+			<view class="btn prev"></view>
+			<view class="btn next"></view>
+			<scroll-view class="scroll-wrap" scroll-x>
+				<view class="scroll-view-item">
+					 <image src="../../static/upload/s3_02_03.jpg" mode="widthFix" />
+				</view>
+				<view class="scroll-view-item">
+					 <image src="../../static/upload/s3_02_03.jpg" mode="widthFix" />
+				</view>
+				<view class="scroll-view-item">
+					 <image src="../../static/upload/s3_02_03.jpg" mode="widthFix" />
+				</view>
+			</scroll-view>
+			<!-- <swiper display-multiple-items='1'
+				next-margin='{{hotGoodsSwiper.previousMargin}}'
+				vertical='{{hotGoodsSwiper.vertical}}'  
+				circular='{{hotGoodsSwiper.circular}}'
+				interval= '{{hotGoodsSwiper.interval}}'
+				duration='{{hotGoodsSwiper.duration}}'
+			>     
+				<swiper-item>
+					  <image src='../../static/upload/s3_02_03.jpg' mode="widthFix"></image>
+				</swiper-item> 
+				<swiper-item>
+					  <image src='../../static/upload/s3_02_03.jpg' mode="widthFix"></image>
+				</swiper-item> 
+			</swiper> -->
+		</view>
+		<view class="goods-cate-wrap">
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+			<view class="item">
+				<view class="pic"><image src="../../static/upload/s2_02_05.jpg" mode="widthFix"></image></view>
+				<view class="title">SWEATER</view>
+			</view>
+		</view>
+		<view class="hot-goods">
+			<image src="../../static/upload/s1_02.jpg" mode="widthFix"></image>
+			<view class="mod-title">
+				<view class="en">HOT SEAL</view>
+				<view class="cn">热卖产品</view>
+			</view>
+		</view>
+		<!-- 新品 end-->
+		
+		<!-- 都市系列 -->
+		<view class="mod-title">
+			<view class="en">MODERN CITY GIRL</view>
+			<view class="cn">都市系列</view>
+		</view>
+		<view class="good-list-wrap">
+			<view class="goods-item">
+				<view class="pic"><image src="../../static/upload/b1.jpg" mode="widthFix"></image></view>
+				<view class="title">英伦图案衬衣</view>
+				<view class="price">RMB 2260</view>
+			</view>
+			<view class="goods-item">
+				<view class="pic"><image src="../../static/upload/b1.jpg" mode="widthFix"></image></view>
+				<view class="title">英伦图案衬衣</view>
+				<view class="price">RMB 2260</view>
+			</view>
+			<view class="goods-item">
+				<view class="pic"><image src="../../static/upload/b1.jpg" mode="widthFix"></image></view>
+				<view class="title">英伦图案衬衣</view>
+				<view class="price">RMB 2260</view>
+			</view>
+			<view class="goods-item">
+				<view class="pic"><image src="../../static/upload/b1.jpg" mode="widthFix"></image></view>
+				<view class="title">英伦图案衬衣</view>
+				<view class="price">RMB 2260</view>
+			</view>
+			<view class="goods-item">
+				<view class="pic"><image src="../../static/upload/b1.jpg" mode="widthFix"></image></view>
+				<view class="title">英伦图案衬衣</view>
+				<view class="price">RMB 2260</view>
+			</view>
+			<view class="goods-item">
+				<view class="pic"><image src="../../static/upload/b1.jpg" mode="widthFix"></image></view>
+				<view class="title">英伦图案衬衣</view>
+				<view class="price">RMB 2260</view>
+			</view>
+		</view>
+		<!-- 都市系列 end-->
+		<view class="more-btn">
+			<navigator url="/" open-type="navigate" hover-class="none">点击查看全部商品</navigator> 
+		</view>
+	</view>
+	<v-nav />
+</view>
